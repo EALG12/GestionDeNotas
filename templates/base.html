@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de registro - Gestión de notas</title>
+        <link 
+            rel="stylesheet" 
+            type="text/css" 
+            href="{{ url_for('static', filename='css/styles.css') }}" 
+        />
+    </head>
+
+    <body>
+        
+        <h1>Formulario de registro</h1>
+
+        <h2>Datos del Docente
+
+        </h2>
+            <form action="" method="get">
+            <p>
+            Nombres: <input type="text" name="nombre" maxlength="50" />
+            </p>
+            <p>
+            Apellidos: <input type="text" name="apellidos" maxlength="50" />
+            </p>
+            <p>
+            Sexo: <input type="radio" name="sexo" value="h" /> Hombre <input type="radio" name="sexo" value="m" /> Mujer
+            </p>
+            <p>
+            Edad: <input type="text" name="Edad" maxlength="3" />
+            </p>
+            <p>
+            Asignatura: <input type="text" name="Asignatura" maxlength="100" />
+            </p>
+            <p>
+            Correo: <input type="text" name="correo" maxlength="100" />
+            </p>
+
+            <button type="button" name="botonasignar">Asignar</button>
+
+            <button type="button" name="botoneditar">Cancelar</button>
+
+            <button type="button" name="btnmenu1">Editar</button>
+
+    </body>
+</html>
+
+
