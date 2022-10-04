@@ -27,6 +27,6 @@ def cambiarContrasena():
 def enviarMensaje():
     return render_template('vistaEnviarMensaje.html')
 
-@app.route('/leerMensaje')
+@app.route('/leerMensajes')
 def leerMensaje():
-    return render_template('vistaLeerMensaje.html')
+    return render_template('vistaLeerMensajes.html')
