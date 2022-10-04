@@ -7,14 +7,26 @@ app = Flask(__name__)
 def index():
     return render_template('base.html')
 
-@app.route('/Docente')
-def docente():
-    return render_template('vistaDocente.html')
+@app.route('/iniciarSesion')
+def registro():
+    return render_template('vistaInicioSesion.html')
 
-@app.route('/Estudiante')
-def estudiante():
-    return render_template('vistaEstudiante.html')
+@app.route('/Registro')
+def registro():
+    return render_template('vistaRegistro.html')
 
-@app.route('/Superadmin')
-def superAdmin():
-    return render_template('vistaSuperAdmin.html')
+@app.route('/recuperarContrasena')
+def recuperarContrasena():
+    return render_template('vistaRecuperarContrasena.html')
+
+@app.route('/cambiarContrasena')
+def cambiarContrasena():
+    return render_template('vistaCambiarContrasena.html')
+
+@app.route('/enviarMensaje')
+def enviarMensaje():
+    return render_template('vistaEnviarMensaje.html')
+
+@app.route('/leerMensaje')
+def leerMensaje():
+    return render_template('vistaLeerMensaje.html')
